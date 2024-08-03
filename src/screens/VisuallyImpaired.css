@@ -1,0 +1,65 @@
+/* VisuallyImpaired.css */
+
+.visually-impaired-page {
+    background-color: #fff; /* Light green background */
+    min-height: 100vh;
+    color: #0F092D; /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .visually-impaired-header {
+    padding: 6rem 12rem;
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .warning {
+    color: #ff0000; /* Red color for warnings */
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .visually-impaired-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+  }
+  
+  .visually-impaired-card {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .visually-impaired-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @media (min-width: 640px) {
+    .title {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .title {
+      font-size: 4rem;
+    }
+  
+    .visually-impaired-cards {
+      flex-direction: row;
+    }
+  }
+  

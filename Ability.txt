@@ -1,0 +1,5 @@
+Annyang feature - annyang is a JavaScript library that provides speech recognition functionality for web applications. It allows you to control web pages and applications using voice commands. Here’s a breakdown of its main features and how it works:
+
+feature:
+Voice Command Recognition
+Browser Compatibility:

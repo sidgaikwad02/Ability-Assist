@@ -1,0 +1,325 @@
+/* General styling for the about container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Styling for the about heading */
+.about-heading {
+  font-size: 2rem; /* Adjusted font size for responsiveness */
+  color: #0F092D; /* Dark color for text */
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  animation: slideIn 1s ease-out;
+}
+
+/* Styling for about description */
+.about-description {
+  font-size: 1.3rem; /* Adjusted font size for readability */
+  color: #4a4a4a; /* Dark gray color */
+  margin-bottom: 20px;
+  max-width: 800px; /* Max width for better readability */
+  line-height: 1.5;
+  text-align: center;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Styling for section heading */
+.section-heading {
+  font-size: 2rem;
+  color: #0F092D;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: slideIn 1s ease-out;
+}
+
+/* Styling for features and testimonials section */
+.features-section, .testimonials-section, .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* General card container styling */
+.card-container {
+  background: linear-gradient(to bottom, #9fbfce, #ccefff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 270px;
+  grid-template-columns: repeat(1fr 2fr 3fr 4fr 5fr);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  margin: 7px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+
+
+.card-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  color: #0F092D;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.card-button {
+  background-color: #0F092D;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.card-button:hover {
+  background-color: #0d0833;
+  transform: scale(1.05);
+}
+
+.team-heading{
+  font-size: 2rem;
+  color: #0F092D;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Styling for member name */
+.member-name {
+  font-size: 1.8rem;
+  color: #0F092D;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styling for member role */
+.member-role {
+  font-size: 1.2rem;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
+
+/* Styling for member bio */
+.member-bio {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries for responsiveness */
+
+/* Mobile devices */
+@media (max-width: 640px) {
+  .about-heading {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .about-description {
+    font-size: 1rem; /* Adjusted font size for mobile */
+    max-width: 95vw; /* Wider width for better readability */
+  }
+
+  .section-heading {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .card-container {
+    max-width: 95vw; /* Wider width for better readability */
+  }
+
+  .card-title {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+  }
+
+  .card-description {
+    font-size: 0.9rem; /* Adjusted font size for mobile */
+  }
+
+  .card-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .member-name {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+  }
+
+  .member-role {
+    font-size: 1rem; /* Adjusted font size for mobile */
+  }
+
+  .member-bio {
+    font-size: 0.9rem; /* Adjusted font size for mobile */
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2.5rem; /* Adjusted font size for tablets */
+  }
+
+  .about-description {
+    font-size: 1.1rem; /* Adjusted font size for tablets */
+    max-width: 85vw; /* Adjust width for tablets */
+  }
+
+  .section-heading {
+    font-size: 2.2rem; /* Adjusted font size for tablets */
+  }
+
+  .card-container {
+    max-width: 85vw; /* Adjust width for tablets */
+  }
+
+  .card-title {
+    font-size: 1.6rem; /* Adjusted font size for tablets */
+  }
+
+  .card-description {
+    font-size: 1rem; /* Adjusted font size for tablets */
+  }
+
+  .card-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .member-name {
+    font-size: 1.6rem; /* Adjusted font size for tablets */
+  }
+
+  .member-role {
+    font-size: 1.1rem; /* Adjusted font size for tablets */
+  }
+
+  .member-bio {
+    font-size: 1rem; /* Adjusted font size for tablets */
+  }
+}
+
+/* Additional styles for side scrolling */
+.testimonials-section {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f9f9f9;
+}
+
+.testimonials-section::-webkit-scrollbar {
+  height: 8px;
+}
+
+.testimonials-section::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.testimonials-section::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+
+/* Styling for each testimonial card */
+.testimonial-card {
+  flex: 0 0 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+  font-size: 1.5rem;
+  color: #0F092D;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
